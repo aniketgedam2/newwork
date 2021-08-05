@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1> check the console</h1>
+
+    <script>
+        function leapyear(year)
+        {
+            return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+        }
+        console.log(leapyear(2016));    
+    </script>
+</body>
+</html>

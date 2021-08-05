@@ -1,0 +1,22 @@
+<html>
+<body>
+  <h1>check the console</h1>
+  <script>
+    let today = new Date();
+    let Years = today.getFullYear();
+
+    if (today.getMonth() == 11 && today.getDate() > 25) {
+        Years = Years + 1;
+    }
+  
+    let christmasDate = new Date(Years, 11, 25);
+  
+    let dayMseconds =1000 * 60 * 60 * 24;
+  
+    let remainingDays = Math.ceil((christmasDate.getTime() - today.getTime()) /(dayMseconds)
+    );
+  
+    console.log("days remaining:"+ remainingDays);
+  </script>
+</body>
+</html>
